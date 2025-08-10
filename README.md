@@ -27,7 +27,7 @@ You need to have Node.js and npm installed on your machine.
 -   [Node.js](https://nodejs.org/en/download/)
 
 ## Screenshot
-![Screen-shot](assets/Screen-shot.png)
+![Screen-shot](/src/assets/Screen-shot.png)
 
 ### Installation
 
