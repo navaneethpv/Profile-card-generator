@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Cards from "./components/Cards";
 import Form from "./components/Forms";
+import ProfileImage from "./assets/Image.jpeg"
 
 function App() {
-  const [Profile,SetProfile] = useState({
-    name : 'John Doe',
-    role : 'WordPress Developer',
-    title : 'Founder & Editor',
+  const [Profile, SetProfile] = useState({
+    name: 'John Doe',
+    role: 'WordPress Developer',
+    title: 'Founder & Editor',
+    image: ProfileImage
   });
   
   const UpdateData = (newData) =>{
