@@ -7,7 +7,7 @@ const Cards = ({Profile}) => {
     <div className="w-[400px] h-[470px] bg-white rounded-lg shadow-2xl">
       <img
         className="size-[120px] rounded-full mx-auto mt-[60px] object-cover object-center border-2 border-cyan-400"
-        src="https://images.pexels.com/photos/1784289/pexels-photo-1784289.jpeg?cs=srgb&dl=adorable-animal-baby-1784289.jpg&fm=jpg"
+        src={Profile.image}
         alt="profile"
       />
       <p className="text-center mt-5 font-bold text-[21px]">{Profile.name}</p>
