@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 
 const Cards = ({Profile}) => {
   return (
-    <div className="w-[400px] h-[470px] bg-white rounded-lg shadow-2xl">
+    <div className="w-[400px] h-[470px] bg-white rounded-lg shadow-2xl hover:scale-110 transition-all duration-200 hover:cursor-pointer">
       <img
         className="size-[120px] rounded-full mx-auto mt-[60px] object-cover object-center border-2 border-cyan-400"
         src={Profile.image}
