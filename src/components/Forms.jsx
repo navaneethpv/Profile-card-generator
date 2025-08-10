@@ -3,8 +3,6 @@ import React, { useState } from "react";
 const Form = ({ Profile, UpdateData }) => {
   const [FormData, SetFormData] = useState(Profile);
 
-  const [ProfileImage, setProfileImage] = useState(null);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     SetFormData((prev) => ({
@@ -17,15 +15,11 @@ const Form = ({ Profile, UpdateData }) => {
     const file = e.target.files[0];
     console.log(e.target.files[0]);
     if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setProfileImage(reader.result);
-        SetFormData((prev) => ({
-          ...prev,
-          image: reader.result,
-        }));
-      };
-      reader.readAsDataURL(file);
+      const ImageUrl = URL.createObjectURL(file);
+      SetFormData((prev) => ({
+        ...prev,
+        image: ImageUrl,
+      }));
     }
   };
 
@@ -76,17 +70,6 @@ const Form = ({ Profile, UpdateData }) => {
           className="w-[230px] h-13 bg-blue-50 rounded-lg pl-2 pt-3 font-medium hover:cursor-pointer border-1 border-gray-300 shadow-md"
           accept="image/*"
         />
-
-        {ProfileImage && (
-          <div className="mt-4">
-            <p className="text-sm text-gray-600 mb-2">Preview:</p>
-            <img
-              src={ProfileImage}
-              alt="Preview"
-              className="w-24 h-24 rounded-full object-cover mx-auto border-2 border-cyan-400"
-            />
-          </div>
-        )}
 
         <input
           type="submit"
