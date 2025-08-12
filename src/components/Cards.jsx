@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const Cards = ({Profile}) => {
   return (
-    <div className="w-[400px] h-[470px] bg-black rounded-lg shadow-2xl hover:scale-110 transition-all duration-200 hover:cursor-pointer text-white">
+    <div className="w-[400px] h-[470px] bg-gray-700 rounded-lg shadow-2xl hover:scale-110 transition-all duration-200 hover:cursor-pointer text-white">
       <img
         className="size-[120px] rounded-full mx-auto mt-[60px] object-cover object-center border-2 border-cyan-400"
         src={Profile.image}
@@ -22,11 +22,11 @@ const Cards = ({Profile}) => {
         </p>
       </div>
       <div className="grid grid-cols-2 mt-7 gap-1 max-w-[300px] mx-auto">
-        <div className="flex bg-gray-900 border-1 w-[130px] mx-auto justify-center rounded-md p-3 gap-3 hover:cursor-pointer hover:bg-gray-700 transition-all duration-150 shadow-md">
+        <div className="flex bg-gray-800 border-1 w-[130px] mx-auto justify-center rounded-md p-3 gap-3 hover:cursor-pointer hover:bg-gray-700 transition-all duration-150 shadow-md">
           <CiMail className="my-auto" />
           <p>Email</p>
         </div>
-        <div className="flex bg-gray-900  border-1 w-[130px] mx-auto justify-center rounded-md p-3 gap-3 hover:cursor-pointer hover:bg-gray-700 transition-all duration-150 shadow-md">
+        <div className="flex bg-gray-800  border-1 w-[130px] mx-auto justify-center rounded-md p-3 gap-3 hover:cursor-pointer hover:bg-gray-700 transition-all duration-150 shadow-md">
           <FaWhatsapp className="my-auto" />
           <p>Whatsapp</p>
         </div>
