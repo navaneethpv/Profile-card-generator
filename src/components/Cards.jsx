@@ -16,7 +16,7 @@ const Cards = ({Profile}) => {
       <p className="text-center text-gray-400 mt-5 font-semibold text-[16px]">
         {Profile.role}
       </p>
-      <div className="bg-blue-100 flex justify-around w-1/4 mx-auto px-[13px] py-1 mt-4 rounded-lg">
+      <div className="bg-blue-100 flex justify-around w-1/2 mx-auto px-[13px] py-1 mt-4 rounded-lg">
         <p className="text-blue-400 font-semibold text-[14px]">
           {Profile.title}
         </p>
