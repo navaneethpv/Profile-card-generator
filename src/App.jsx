@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cards from "./components/Cards";
 import Form from "./components/Forms";
 import ProfileImage from "./assets/Image.jpeg";
+import Options from "./components/Options";
 
 function App() {
   const [Profile, SetProfile] = useState({
@@ -20,6 +21,9 @@ function App() {
       <div className="flex  gap-10 bg-gray-300 rounded-lg p-10 shadow-2xl">
         <Form Profile={Profile} UpdateData={UpdateData} />
         <Cards Profile={Profile} />
+        <div className="flex flex-col justify-end items-start ml-auto bg-red-300">
+          <span><Options /></span>
+        </div>
       </div>
     </div>
   );
